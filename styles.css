@@ -1,0 +1,63 @@
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1e1e2f;
+    color: white;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #f4a261;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+  }
+  
+  /* Bouton Shuffle */
+  button {
+    padding: 10px 20px;
+    background-color: #264653;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    position: fixed; /* Fixe le bouton en haut de la page */
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Assure qu'il est au-dessus de la grille */
+  }
+  
+  button:hover {
+    background-color: #2a9d8f;
+  }
+  
+  /* Grille */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 341px); /* Largeur des tuiles */
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 80px auto; /* Ajoute un espace sous le bouton */
+    width: 1024px; /* Largeur totale */
+    height: 1024px; /* Hauteur totale */
+    position: relative;
+  }
+  
+  /* Tuiles */
+  .tile {
+    width: 341px; /* Largeur d'une tuile */
+    height: 341px; /* Hauteur d'une tuile */
+    border: 2px solid #264653;
+    background-image: url('speedy-art.webp'); /* Chemin de l'image */
+    background-size: 1024px 1024px; /* Taille totale de l'image */
+    cursor: grab;
+    user-select: none;
+  }
+  
