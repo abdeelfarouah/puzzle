@@ -55,7 +55,7 @@ body {
     width: 341px; /* Largeur d'une tuile */
     height: 341px; /* Hauteur d'une tuile */
     border: 2px solid #264653;
-    background-image: url('speedy-art.webp'); /* Chemin de l'image */
+    background-image: url('hero.jpg'); /* Chemin de l'image */
     background-size: 1024px 1024px; /* Taille totale de l'image */
     cursor: grab;
     user-select: none;
